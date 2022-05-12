@@ -1,0 +1,99 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contener{
+    width: 80%;
+    height: 400px;
+    border: solid red;
+    background-color: rgb(76, 76, 160);
+    position: relative;
+    overflow: hidden;
+}
+
+.animation-obstacle{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: flash 5s 1s linear infinite;
+    width: 5%;
+    background-color: red;
+    transition: 5s;
+
+}
+
+@keyframes flash {
+    0%{
+        display: block;
+        right: 0;
+    }
+    50%{
+        margin-right: 100%;
+    }
+    100%{
+        margin-right: 100%;
+        display: none;
+    }
+}
+
+.perso{
+ 
+    width: 2%;
+    height: 30px;
+    overflow: hidden;
+    position: absolute;
+     bottom: 0;
+     left: 0%;
+    border: solid red;
+         
+    background-repeat: no-repeat;
+ }
+ .frame{
+     position: absolute;
+     animation:   1s 1s   infinite;
+     right: -353px;
+ }
+ @keyframes frame {
+     0%{
+         right: 20%;
+     }
+     100%{
+          right: 100%;
+     }
+ }
+ .moi{
+    width: 5%;
+    height: 70px;
+    position: absolute;
+     bottom: 0;
+    border: solid red;
+    left: 10%;
+ }
+
+  
+
+ .obstacle{
+    width: 5%;
+    height: 70px;
+    position: absolute;
+    background-color: orange;
+    bottom: 0;
+ }
+
+ .piece{
+     width: 2%;
+     height: 20px;
+     background-color: yellow;
+     border-radius: 50%;
+     bottom: 10px;
+     position: absolute;
+ }
+
+ .score{
+     position: absolute;
+     top: 0;
+     right: 0;
+     font-size: 100px;
+ }
